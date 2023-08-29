@@ -1,3 +1,7 @@
+"""
+Script to convert the wikipedia table for soccer/futball teams and turn into a row for insert into a teams db
+"""
+
 from bs4 import BeautifulSoup
 import csv
 
