@@ -1,10 +1,14 @@
 # Import necessary libraries
+import csv
+import os
 import pandas as pd
 import requests
+
 from bs4 import BeautifulSoup
 
-# URL of the Wikipedia page
+# URL of the 2023/24 Serie A Season
 url = "https://en.wikipedia.org/wiki/Serie_A#2023%E2%80%9324_season"
+
 
 # Send a GET request to the URL
 response = requests.get(url)
@@ -87,3 +91,21 @@ for team, link in teams_dict.items():
     for player in player_list:
         print(player)
     print("\n")
+
+    # Create the "squads" folder if it doesn't exist
+    if not os.path.exists("squads"):
+        os.makedirs("squads")
+
+    # Prepare CSV filename
+    csv_filename = f"squads/{team.lower().replace(' ', '_')}_squad.csv"
+    
+    # Save player information to CSV
+    with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
+        fieldnames = ["No.", "Pos.", "Nation", "Player", "Info"]
+        writer = csv.writer(csv_file)
+
+        writer.writerow(fieldnames)
+        writer.writerows([player_info[field] for field in fieldnames] for player_info in player_list)
+
+    
+    print(f"Player information for {team} saved in {csv_filename}\n")
