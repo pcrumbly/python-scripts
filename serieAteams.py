@@ -60,7 +60,7 @@ for team, link in teams_dict.items():
     # List to store player information for the current team
     player_list = []
     
-     # Iterate through each player table and extract player information
+    # Iterate through each player table and extract player information
     for player_table in player_tables:
         for row in player_table.find_all("tr")[1:]:
             columns = row.find_all("td")
@@ -103,9 +103,11 @@ for team, link in teams_dict.items():
     # Save player information to CSV
     with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
         fieldnames = ["No.", "Pos.", "Nation", "Player", "Info"]
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-        
-        writer.writeheader()
-        writer.writerows(player_list)
+        writer = csv.writer(csv_file)
+
+        writer.writerow(fieldnames)
+        writer.writerows([player_info[field] for field in fieldnames] for player_info in player_list)
     
     print(f"Player information for {team} saved in {csv_filename}\n")
+    # END for (#Iterate through each player table and extract player information)
+# END for (#Iterate through the teams_dict to scrape each team's page)
