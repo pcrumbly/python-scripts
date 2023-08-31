@@ -1,3 +1,4 @@
+import os
 import tkinter as tk
 from tkinter import filedialog
 import pandas as pd
@@ -12,15 +13,20 @@ def open_csv_file():
 
         table = tk.Label(scrollable_frame, text=df.to_string(index=False), justify='left')
         
-        table.pack()
+        table.pack(fill='x', expand=True)
+        
+        filename = os.path.basename(filepath)
+        filepath_entry.delete(0, tk.END)
+        filepath_entry.insert(0, filename)
+        
         #TODO figure out better way to update the root/frame/canvas/scrollbar IDK???
         #this seems like a hack
-        root.geometry("800x601")
+        root.geometry("600x701")
         
 
 root = tk.Tk()
 root.title("CSV Viewer")
-root.geometry("800x600")
+root.geometry("600x700")
 
 header_frame = tk.Frame(root, height=50)
 header_frame.pack(fill=tk.X)
@@ -29,7 +35,7 @@ open_button = tk.Button(header_frame, text="Open CSV", command=open_csv_file)
 open_button.pack(side=tk.LEFT, padx=10)
 
 filepath_entry = tk.Entry(header_frame)
-filepath_entry.pack(side=tk.LEFT, padx=10)
+filepath_entry.pack(side=tk.LEFT, padx=10, fill='x', expand=True)
 
 main_body_frame = tk.Frame(root)
 main_body_frame.pack(fill=tk.BOTH, expand=True, padx=10)
