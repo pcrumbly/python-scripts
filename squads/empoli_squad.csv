@@ -4,10 +4,10 @@ No.,Pos.,Nation,Player,Info
 4,DF,POL,Sebastian Walukiewicz,
 5,MF,ITA,Alberto Grassi,
 7,FW,ALB,Stiven Shpendi,(on loan from Cesena)
+8,MF,UKR,Viktor Kovalenko,(on loan from Atalanta)
 9,FW,ITA,Francesco Caputo,
 11,FW,GHA,Emmanuel Gyasi,
 13,DF,NZL,Liberato Cacace,
-14,MF,UKR,Viktor Kovalenko,(on loan from Atalanta)
 17,FW,SWE,Emmanuel Ekong,
 18,MF,ROU,Razvan Marin,
 19,DF,POL,Bartosz Bereszyński,(on loan from Sampdoria)
@@ -15,7 +15,6 @@ No.,Pos.,Nation,Player,Info
 21,MF,ITA,Jacopo Fazzini,
 22,MF,ITA,Filippo Ranocchia,(on loan from Juventus)
 24,DF,NGA,Tyronne Ebuehi,
-26,DF,ITA,Lorenzo Tonelli,
 25,GK,ITA,Elia Caprile,(on loan from Napoli)
 27,MF,ITA,Daniel Maldini,(on loan from Milan)
 28,FW,ITA,Nicolò Cambiaghi,(on loan from Atalanta)
@@ -25,6 +24,9 @@ No.,Pos.,Nation,Player,Info
 35,MF,ITA,Tommaso Baldanzi,
 91,FW,ITA,Roberto Piccoli,(on loan from Atalanta)
 92,MF,ITA,Giovanni Crociata,
+—,GK,ALB,Etrit Berisha,
+—,FW,ITA,Mattia Destro,
+—,DF,ITA,Lorenzo Tonelli,
 —,MF,ITA,Luca Belardinelli,
 —,GK,ITA,Niccolò Chiorra,(at Lucchese until 30 June 2023)
 —,DF,ITA,Samuele Angori,(at Pontedera until 30 June 2023)

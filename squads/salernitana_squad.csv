@@ -1,10 +1,9 @@
 No.,Pos.,Nation,Player,Info
 1,GK,ITA,Vincenzo Fiorillo,
-2,DF,TUN,Dylan Bronn,
 3,DF,CRO,Domagoj Bradarić,
 5,DF,AUT,Flavius Daniliuc,
 6,MF,FRA,Junior Sambia,
-7,FW,ARG,Agustín Martegani,
+7,FW,ARG,Agustín Martegani,(on loan from San Lorenzo)
 8,MF,NOR,Emil Bohinen,
 10,FW,SEN,Boulaye Dia,
 11,FW,NOR,Erik Botheim,
@@ -12,24 +11,23 @@ No.,Pos.,Nation,Player,Info
 14,FW,CHI,Diego Valencia,
 17,DF,ARG,Federico Fazio,(captain)
 18,MF,MLI,Lassana Coulibaly,
-19,FW,JAM,Trivante Stewart,
 20,MF,CYP,Grigoris Kastanos,
 21,FW,CPV,Jovane Cabral,(on loan from Sporting CP)
 22,FW,NGA,Chukwubuikem Ikwuemesi,
 23,DF,SVK,Norbert Gyömbér,
 25,MF,ITA,Giulio Maggiore,
+28,DF,TUN,Dylan Bronn,
 30,MF,ITA,Pasquale Mazzocchi,
 56,GK,FRA,Benoit Costil,
+61,GK,ITA,Jacopo De Matteis,
 66,DF,ITA,Matteo Lovato,
 78,MF,SEN,Mamadou Coulibaly,
 87,MF,ITA,Antonio Candreva,
 98,DF,ITA,Lorenzo Pirola,
 99,MF,POL,Mateusz Łęgowski,
-—,GK,ITA,Jacopo De Matteis,
-—,MF,ITA,Gioacchino Galeotafiore,
 —,MF,ITA,Francesco Orlando,
-—,FW,NOR,Julian Kristoffersen,
 —,FW,NGA,Simy,
+—,FW,JAM,Trivante Stewart,
 —,GK,ITA,Luigi Sepe,(at Lazioi until 30 June 2024)
 —,DF,MDA,Andrei Moțoc,(at Legnago until 30 June 2024)
 —,MF,ITA,Edoardo Iannoni,(at Perugia until 30 June 2024)
